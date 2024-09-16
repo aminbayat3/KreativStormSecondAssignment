@@ -29,6 +29,17 @@ Before contributing, please make sure to follow these guidelines and steps to en
 
 7. **Review Process**:
    - Once the pull request is approved, you can merge your changes into the `main` branch.
+  
+## Next Steps
+
+1. **Switch Back to the Main Branch**:
+   - After your pull request is merged, switch back to the `main` branch with `git checkout main`.
+
+2. **Update Your Local Main Branch**:
+   - Run `git pull` to get the latest changes from the remote `main` branch. This ensures your local `main` branch is up to date.
+
+3. **Create a New Branch for the Next Task**:
+   - Run `git checkout -b <new-task-branch>
 
 ---
 
