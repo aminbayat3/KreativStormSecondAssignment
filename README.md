@@ -39,7 +39,7 @@ Before contributing, please make sure to follow these guidelines and steps to en
    - Run `git pull` to get the latest changes from the remote `main` branch. This ensures your local `main` branch is up to date.
 
 3. **Create a New Branch for the Next Task**:
-   - Run `git checkout -b <new-task-branch>
+   - Run `git checkout -b <new-task-branch>`
 
 ---
 
