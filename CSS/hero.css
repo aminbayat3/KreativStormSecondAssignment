@@ -7,16 +7,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-main{
-  height: max-content;
-  margin-top: 5em;
-}
-
 img {
   max-width: 100%;
 }
 
 .hero {
+  padding: 2em 0;
   background-color: #1F2937;
 }
 
@@ -38,18 +34,6 @@ img {
   color: #E5E7Eb;
 }
 
-.hero-text p{
-  width: 80%;
-  text-align: left;
-  font-size: 1.5em;
-  line-height: 1.6;
-  padding: 0.4em;
-}
-
-.hero-img img{
-  border-radius: 4%;
-}
-
 .hero button {
   background-color: #3882F6;
   color: #F9FAF8;
@@ -58,13 +42,6 @@ img {
   border: none;
   border-radius: 5px;
   margin-bottom: 1em;
-  transition: all ease-in-out 0.2s;
-}
-
-.hero button:hover{
-  background-color: var(--DarkPurple);
-filter: brightness(125%);
-transform: translateY(0.1em);
 }
 
 @media (min-width: 760px) {
@@ -84,12 +61,12 @@ transform: translateY(0.1em);
   }
 
   .hero h1 {
-    font-size: 2.6em;
+    font-size: 48px;
     text-align: left;
   }
 
   .hero p {
-    font-size: 1.2em;
+    font-size: 18px;
   }
 
   .hero img {
