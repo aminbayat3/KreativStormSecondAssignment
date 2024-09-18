@@ -61,7 +61,7 @@
 
 @media (min-width: 1000px) {
   .services-container {
-    max
+    max-width: 1200px;
   }
 
   .services-container li {
