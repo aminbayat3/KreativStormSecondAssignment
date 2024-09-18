@@ -59,10 +59,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
-  .services-container {
-    max-width: 1200px;
-  }
+@media (min-width: 1024px) {
 
   .services-container li {
     align-items: start;
