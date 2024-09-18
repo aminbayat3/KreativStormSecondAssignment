@@ -16,11 +16,16 @@
   color: var(--primary-text-color);
   margin-top: 0;
   text-align: center;
+  width: 90%;
 }
 
 .hero p {
   color: var(--secondary-text-color);
   font-size: var(--font-size-quaternary);
+  width: 90%;
+  text-align: left;
+  font-size: var(--font-size-tertiary);
+  line-height: 1.2;
 }
 
 .hero button {
@@ -32,11 +37,25 @@
   border: none;
   border-radius: 5px;
   margin-bottom: 1rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.hero button:hover{
+  background-color: var(--primary-text-color);
+  color: var(--secondary-background-color);
+}
+
+.hero button:focus{
+  transform: translate(0.1rem, 0.1rem);
 }
 
 .hero img {
   object-fit: cover;
   align-self: flex-start;
+}
+
+.hero-img img{
+  border-radius: 4%;
 }
 
 /* Advantages Section */
@@ -45,15 +64,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .advantages-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
-  gap: 2rem;
 }
 
 .advantages h1 {
@@ -65,13 +83,15 @@
 }
 
 .adv-img-container {
-  width: 160px;
-  margin: auto;
+  width: 10rem;
+  text-align: center;
 }
 
 .advantages img {
   border: 3px solid var(--secondary-background-color);
   border-radius: 10px;
+  width: 10rem;
+  height: 10rem;
 }
 
 .advantages p {
@@ -103,4 +123,45 @@
   .hero h1 {
     text-align: left;
   }
+}
+
+/* Inspire quote & call to action */
+
+.call-to-action{
+  width: 75%;
+  margin: 5% 12%;
+  background-color: var(--secondary-background-color);
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  font-size: var(--font-size-tertiary);
+}
+
+.call-to-action button{
+  font-size: var(--font-size-tertiary);
+  height: fit-content;
+  width: fit-content;
+  color: var(--secondary-background-color);
+  border-radius: 5%;
+  box-shadow: var(--primary-text-color) 0.1rem 0.1rem;
+}
+
+.call-to-action button:focus{
+  transform: translate(0.1rem, 0.1rem);
+}
+
+.inspire-quote{
+  width: 100%;
+  background-color: var(--secondary-text-color);
+  height: 12rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire-quote p{
+  font-size: 2.25rem;
 }
