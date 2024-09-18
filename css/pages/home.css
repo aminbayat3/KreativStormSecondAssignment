@@ -16,16 +16,11 @@
   color: var(--primary-text-color);
   margin-top: 0;
   text-align: center;
-  width: 90%;
 }
 
 .hero p {
   color: var(--secondary-text-color);
   font-size: var(--font-size-quaternary);
-  width: 90%;
-  text-align: left;
-  font-size: var(--font-size-tertiary);
-  line-height: 1.2;
 }
 
 .hero button {
@@ -40,22 +35,9 @@
   transition: all ease-in-out 0.2s;
 }
 
-.hero button:hover{
-  background-color: var(--primary-text-color);
-  color: var(--secondary-background-color);
-}
-
-.hero button:focus{
-  transform: translate(0.1rem, 0.1rem);
-}
-
 .hero img {
   object-fit: cover;
   align-self: flex-start;
-}
-
-.hero-img img{
-  border-radius: 4%;
 }
 
 /* Advantages Section */
@@ -64,14 +46,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5rem;
 }
 
 .advantages-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 85%;
+  gap: 2rem;
 }
 
 .advantages h1 {
@@ -100,11 +82,51 @@
   margin: 0.5rem 0 1.5rem 0;
 }
 
+/* Inspire quote & call to action */
+.call-to-action {
+  width: 75%;
+  margin: 5% 12%;
+  background-color: var(--secondary-background-color);
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  font-size: var(--font-size-tertiary);
+}
+
+.call-to-action button {
+  font-size: var(--font-size-tertiary);
+  height: fit-content;
+  width: fit-content;
+  color: var(--secondary-background-color);
+  border-radius: 5%;
+  box-shadow: var(--primary-text-color) 0.1rem 0.1rem;
+}
+
+.call-to-action button:focus {
+  transform: translate(0.1rem, 0.1rem);
+}
+
+.inspire-quote {
+  width: 100%;
+  background-color: var(--secondary-text-color);
+  height: 12rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire-quote p {
+  font-size: 2.25rem;
+}
+
 @media (min-width: 768px) {
   .advantages-container {
     max-width: 800px;
   }
-  
+
   .hero {
     padding: 4rem 0;
   }
@@ -125,43 +147,13 @@
   }
 }
 
-/* Inspire quote & call to action */
+@media (min-width: 1024px) {
+  .hero a:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
+  }
 
-.call-to-action{
-  width: 75%;
-  margin: 5% 12%;
-  background-color: var(--secondary-background-color);
-  height: 12rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  font-size: var(--font-size-tertiary);
-}
-
-.call-to-action button{
-  font-size: var(--font-size-tertiary);
-  height: fit-content;
-  width: fit-content;
-  color: var(--secondary-background-color);
-  border-radius: 5%;
-  box-shadow: var(--primary-text-color) 0.1rem 0.1rem;
-}
-
-.call-to-action button:focus{
-  transform: translate(0.1rem, 0.1rem);
-}
-
-.inspire-quote{
-  width: 100%;
-  background-color: var(--secondary-text-color);
-  height: 12rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.inspire-quote p{
-  font-size: 2.25rem;
+  .hero a:focus {
+    transform: translate(0.1rem, 0.1rem);
+  }
 }
