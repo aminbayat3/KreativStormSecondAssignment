@@ -121,7 +121,8 @@ ul {
   width: 100%;
   background-color: var(--primary-background-color);
   height: max-content;
-  padding: 2em 0;
+  padding: 2rem 0;
+  margin-top: 4rem;
 }
 
 .footer-getintouch {
@@ -137,11 +138,6 @@ ul {
   font-size: var(--font-size-tertiary);
   line-height: 2;
   color: var(--secondary-background-color);
-}
-
-.footer-sitemap a:hover {
-  color: var(--secondary-text-color);
-  transform: translateY(0.1em);
 }
 
 .footer-main-flex {
@@ -191,4 +187,40 @@ ul {
 
 .get_in_touch {
   text-decoration-line: underline;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  a:hover {
+    cursor: pointer;
+  }
+
+  nav li:hover {
+    transform: translateY(0.1rem);
+  }
+
+  nav a:hover {
+    color: var(--secondary-background-color);
+  }
+
+  .footer-sitemap a:hover {
+    color: var(--secondary-text-color);
+    transform: translateY(0.1em);
+  }
 }
