@@ -81,8 +81,8 @@
 }
 
 .advantages p {
-  font-size: var(--font-size-quaternary);
-  color: var(--primary-background-color);
+  font-size: var(--font-size-quinary);
+  color: var(--tertiary-text-color);
   margin: 0.5rem 0 1.5rem 0;
 }
 
