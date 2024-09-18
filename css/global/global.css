@@ -1,3 +1,4 @@
+/* BoilerPlate */
 html {
   font-size: 16px; /* Ensure 1rem equals 16px */
   box-sizing: border-box;
@@ -21,6 +22,10 @@ img {
   max-height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header */
 header {
   background-color: var(--primary-background-color);
@@ -32,10 +37,6 @@ nav {
   margin: 0 auto;
 }
 
-.logo {
-  text-decoration: none;
-}
-
 nav a {
   font-size: var(--font-size-quaternary);
   color: var(--secondary-text-color);
@@ -44,7 +45,9 @@ nav a {
   text-shadow: -0.2em 0.1em 0.2em var(--primary-background-color);
 }
 
-.logo p {
+.logo {
+  text-decoration: none;
+  display: block;
   font-size: var(--font-size-tertiary);
   text-align: center;
   margin: 0;
@@ -55,7 +58,6 @@ nav ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   margin-top: 2rem;
   gap: 3rem;
 }
