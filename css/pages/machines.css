@@ -64,9 +64,15 @@
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .card {
     width: 16.5rem;
+  }
+
+  .machine-cards {
+    width: 90%;
+    margin: auto;
+    gap: 2.5rem;
   }
 }
 
@@ -76,6 +82,6 @@
   }
 
   .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 }
