@@ -28,14 +28,10 @@
   background-color: var(--secondary-text-color);
   padding: 1.5rem;
   border-radius: 0.625rem;
-  width: 17.5rem;
+  width: 15rem;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 1px 10px var(--primary-background-color);
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card img {
@@ -66,4 +62,20 @@
   border: none;
   border-radius: 0.3125rem;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 16.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 17.5rem;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
 }
