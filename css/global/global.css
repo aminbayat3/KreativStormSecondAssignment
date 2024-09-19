@@ -31,6 +31,10 @@ ul {
   list-style: none;
 }
 
+button, [role="button"] {
+  transition: all 0.3s ease;
+}
+
 /* Header */
 header {
   background-color: var(--primary-background-color);
@@ -199,6 +203,11 @@ footer {
 @media (min-width: 1024px) {
   a:hover {
     cursor: pointer;
+  }
+
+  button:hover, [role="button"]:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
   }
 
   nav li:hover {
