@@ -16,12 +16,13 @@
   color: var(--tertiary-text-color);
 }
 
-.machine-cards {
+.machine-cards-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 2rem 0;
+  padding-left: 0;
 }
 
 .card {
@@ -69,7 +70,7 @@
     width: 16.5rem;
   }
 
-  .machine-cards {
+  .machine-cards-list {
     width: 90%;
     margin: auto;
     gap: 2.5rem;
