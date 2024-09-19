@@ -31,7 +31,8 @@ ul {
   list-style: none;
 }
 
-button, [role="button"] {
+button,
+[role="button"] {
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;
 }
@@ -108,10 +109,6 @@ footer {
   text-decoration: none;
   font-size: var(--font-size-quinary);
   transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--secondary-background-color);
 }
 
 .footer-socials {
@@ -206,7 +203,8 @@ footer {
     cursor: pointer;
   }
 
-  button:hover, [role="button"]:hover {
+  button:hover,
+  [role="button"]:hover {
     background-color: var(--primary-text-color);
     color: var(--secondary-background-color);
   }
@@ -220,6 +218,10 @@ footer {
   }
 
   .footer-info a:hover {
+    color: var(--secondary-background-color);
+  }
+
+  .footer-links a:hover {
     color: var(--secondary-background-color);
   }
 
