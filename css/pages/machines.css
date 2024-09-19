@@ -38,6 +38,12 @@
   box-shadow: 0 1px 10px var(--primary-background-color);
 }
 
+.cart-img-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 .card img {
   border-radius: 0.625rem;
   width: 14.5rem;
