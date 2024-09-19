@@ -27,6 +27,9 @@
 
 .card {
   background-color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1.5rem;
   border-radius: 0.625rem;
   width: 15rem;
@@ -37,6 +40,9 @@
 
 .card img {
   border-radius: 0.625rem;
+  width: 14.5rem;
+  height: 9.7rem; 
+  object-fit: cover;
   border: 2px solid var(--secondary-background-color);
 }
 
