@@ -1,63 +1,53 @@
-.contacts-main-box{
+.contacts-main-box {
+  width: 75%;
+  height: 40%;
+  margin: 5% 12.5%;
+  background-color: var(--secondary-text-color);
+  border-radius: 0.4rem;
+  overflow: auto;
+}
+
+.contact-list {
+  display: flex;
+  justify-items: space-between;
+}
+
+.contact-method {
+  display: inline-block;
+  font-size: var(--font-size-tertiary);
+  text-decoration: underline;
+  color: var(--primary-background-color);
+}
+
+.contact-value {
+  display: inline-block;
+  font-size: var(--font-size-tertiary);
+  color: var(--secondary-background-color);
+  padding: var(--font-size-quinary);
+}
+
+@media (max-width: 768px) {
+  .contacts-main-box {
+    width: 95%;
+    text-align: center;
+    margin: 10% 2.5%;
+  }
+
+  .contact-value,
+  .contact-method {
+    display: block;
+    width: inherit;
+  }
+
+  .contact-value {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 424px) {
+  .contacts-main-box {
     width: 75%;
-    height: 40%;
+    text-align: center;
     margin: 5% 12.5%;
-    background-color: var(--secondary-text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.4rem;
-    overflow: auto;
-}
-
-.contact-list{
-    display: flex;
-    justify-items: space-between;
-}
-
-
-.contacts-main-box h1{
-    font-size: var(--font-size-secondary);
-    color: var(--primary-background-color);
-}
-
-.contact-method{
-    display: inline-block;
-    font-size: var(--font-size-tertiary);
-    text-decoration: underline;
-    color: var(--primary-background-color);
-}
-
-.contact-value{
-    display: inline-block;
-    font-size: var(--font-size-tertiary);
-    color: var(--secondary-background-color);
-    padding: var(--font-size-quinary);
-}
-
-
-@media (max-width: 768px){
-    .contacts-main-box{
-        width: 95%;
-        text-align: center;
-        margin: 10% 2.5%;
   }
-
-    .contact-value, .contact-method{
-        display: block;
-        width: inherit;
-  }
-
-    .contact-value{
-        font-size: 95%;
-  }
-
-}
-
-@media (min-width: 424px){
-    .contacts-main-box{
-        width: 75%;
-        text-align: center;
-        margin: 5% 12.5%;
-        }
 }

@@ -29,6 +29,7 @@ a {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 button,
@@ -65,7 +66,6 @@ nav a {
 }
 
 nav ul {
-  padding-left: 0;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -93,9 +93,6 @@ footer {
 .footer-navigation-socials {
   width: 85%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .footer-navigation-socials a,
@@ -108,7 +105,8 @@ footer p {
   margin: 0;
 }
 
-.footer-links, .footer-socials {
+.footer-links,
+.footer-socials {
   margin-bottom: 1.3rem;
 }
 
@@ -181,9 +179,6 @@ footer p {
   }
 
   .footer-navigation-socials {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 95%;
   }
 
@@ -212,6 +207,7 @@ footer p {
   [role="button"]:hover {
     background-color: var(--primary-text-color);
     color: var(--secondary-background-color);
+    cursor: pointer;
   }
 
   nav li:hover {
