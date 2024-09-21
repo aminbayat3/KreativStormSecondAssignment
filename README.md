@@ -5,6 +5,8 @@
 ### Introduction
 This project is a static website for **HeavyMachinery**, designed to showcase the services, machines, and contact information of a construction company. The website consists of several pages, including **Home**, **Services**, **Machines**, and **Contact** pages, each providing valuable information to potential customers.
 
+**[Visit the HeavyMachinery Website](https://aminbayat3.github.io/KreativStormSecondAssignment/)**.
+
 ### Technologies Used
 
 - **HTML5 Semantic Structure**:  
