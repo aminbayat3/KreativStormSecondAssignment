@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+}
+
 .flex-center-wrap {
   display: flex;
   justify-content: center;
