@@ -40,7 +40,7 @@
 
 /* Advantages Section */
 .advantages {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .advantages-container {
@@ -108,7 +108,7 @@
   padding: 4rem 2.5rem;
 }
 
-.inspire-quote p {
+.inspire-quote blockquote {
   width: 90%;
   color: var(--tertiary-text-color);
   font-size: var(--font-size-secondary);
@@ -153,7 +153,7 @@
     padding: 5.5rem 4rem;
   }
 
-  .inspire-quote p, .inspire-quote span { 
+  .inspire-quote blockquote, .inspire-quote span { 
     width: 80%;
   }
 
@@ -177,7 +177,7 @@
     padding: 6.5rem 5rem;
   }
 
-  .inspire-quote p, .inspire-quote span { 
+  .inspire-quote blockquote, .inspire-quote span { 
     width: 60%;
   }
 
