@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav aria-label="Main Navigation" role="navigation">
         <a href="./index.html" class="logo" aria-current="page">
           HeavyMachinery
@@ -33,28 +33,47 @@
         </ul>
       </nav>
     </header>
+
     <main id="main">
+      <section class="form-box">
+        <h3>Fill in your request and we'll get back to you!</h3>
+        <form action="" method="POST" id="user_request_form">
+          <label for="request_name">Personal or company name</label>
+          <input required type="text" id="request_name" placeholder="Your name goes here">
+          <br>
+          <label for="request_email">Put your contact email here</label>
+          <input required type="email" id="request_email" placeholder="yourmail@example.xmpl">
+          <br>
+          <label for="phone_number">Phone number where we can reach you</label>
+          <input type="tel" id="phone_number" name="phone_number" placeholder="+1234567890" pattern="\+[0-9]{10,15}" min="8" max="15" required>
+          <br>
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+        <br>
+          <label for="text_request">Type in an explanation for your request</label>
+          <textarea id="text_request" required form="user_request_form">
+          </textarea>
+      </section>
+
+
       <section class="contacts-main-box flex-column-center">
         <h1 class="header-text">Contact information</h1>
 
-        <div class="contact-list">
-          <ul>
-            <li>
-              <p class="contact-method">E-MAIL:</p>
-              <p class="contact-value">heavy_machinery@awesome.de</p>
-            </li>
-
-            <li>
-              <p class="contact-method">PHONE:</p>
-              <p class="contact-value">+4648465165164</p>
-            </li>
-
-            <li>
-              <p class="contact-method">ADDRESS:</p>
-              <p class="contact-value">Very cool street 135, Berlin, Germany</p>
-            </li>
-          </ul>
-        </div>
+        <address>
+          <p>Feel free to contact us.<br>
+            And check us out
+            on our social media!
+          </p>
+          <br>
+          Contact us via:<br>
+          E-MAIL: heavy_machinery@awesome.de<br>
+          PHONE: +4648465165164<br>
+          <br>
+          Location:<br>
+          Very cool street 135<br>
+          Berlin, Germany
+        </address>
+        
       </section>
     </main>
 
@@ -63,7 +82,7 @@
         <div class="footer-links">
           <a href="./services.html">Services</a>
           <a href="./machines.html">Machines</a>
-          <a href="./about-us.html">About Us</a>
+          <a href="./contacts.html">Contacts</a>
         </div>
 
         <div class="footer-socials">
@@ -88,7 +107,7 @@
 
       <p>&copy; 2024 HeavyMachinery. All rights reserved.</p>
 
-      <a href="#main" class="back-to-top" aria-label="Back to top">
+      <a href="#header" class="back-to-top" aria-label="Back to top">
         <img src="./images/back-to-top.png" alt="back to top"
       ></a>
     </footer>
